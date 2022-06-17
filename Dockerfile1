@@ -1,0 +1,3 @@
+FROM tibco/bwce:2.4.5
+
+ADD Helloworld.application_1.0.0.ear /
