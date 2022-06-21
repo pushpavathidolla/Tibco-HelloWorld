@@ -13,7 +13,7 @@ pipeline {
         ECR_ENV_DEV = "dev"
         POD_PATTERN = "hello-world"
         K8S_NAMESPACE = "tibco-dev"
-        DOCKER_IMAGE = "548018587351.dkr.ecr.us-east-2.amazonaws.com/testing"
+        DOCKER_IMAGE = "548018587351.dkr.ecr.us-east-2.amazonaws.com/testing:v1"
     }
     stages {
       stage('Cleanup')
