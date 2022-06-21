@@ -27,8 +27,7 @@ pipeline {
       {
         steps {
           echo "Compile & Build..."
-          //sh 'mvn -f Helloworld.application.parent/pom.xml clean initialize package docker:build'
-           sh 'mvn -f Helloworld.application.parent/pom.xml package fabric8:build'
+          sh 'mvn -f Helloworld.application.parent/pom.xml clean initialize package docker:build'
         }
       }
       stage('Docker Push')
