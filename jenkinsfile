@@ -11,9 +11,9 @@ pipeline {
         AWS_ACCESS_KEY_ID = "$AWS_ACCESS_KEY_ID_DEV"
         ECR_URL = "548018587351.dkr.ecr.us-east-2.amazonaws.com/testing"
         ECR_ENV_DEV = "dev"
-        POD_PATTERN = "tibcohelloworld"
-        K8S_NAMESPACE = "tibco-helloworld"
-        DOCKER_IMAGE = "tibcohelloworld"
+        POD_PATTERN = "hello-world"
+        K8S_NAMESPACE = "tibco-dev"
+        DOCKER_IMAGE = "548018587351.dkr.ecr.us-east-2.amazonaws.com/testing:v1"
     }
     stages {
       stage('Cleanup')
